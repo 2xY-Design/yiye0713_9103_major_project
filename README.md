@@ -17,3 +17,11 @@
 3. Third Item
 
 ![An image of a cat](https://placekitten.com/200/300)
+
+```
+function helloWorld() {
+console.log("Hello, world!");
+}
+```
+
+> This is a blockquote.
