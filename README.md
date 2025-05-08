@@ -1,27 +1,22 @@
-# yiye0713_9103_major_project
+# Week9 Quiz
 
-# Header 1
-## Header 2
-### Header 3
+## Imaging Technique Inspiration
 
-**Bold Text** 
-*Italic Text* 
+Inspired by ‘Circles in the Sand’ by Simon’s mandalas (see images below), I plan to replicate the equally spaced dots layered in rings around a central axis. This radial pattern fosters harmony and hierarchical complexity, guiding viewers’ eyes outward in balanced measures. For the major assignment, using parametrically generated rings will provide precise control over dot count, radius steps, and color transitions, ensuring a reproducible, mathematically grounded design that meets requirements for symmetry, scalability, and algorithmic generation within the project timeline.
 
-- Item 1
-- Item 2
-  - Subitem 2.1
-  - Subitem 2.2
+![An image of 'circles in the sand'](https://growingwell.b-cdn.net/wp-content/uploads/2024/08/Beach-Mandala-Growing-Well-1.webp)
 
-1. First Item
-2. Second Item
-3. Third Item
+![An image of 'circles in the sand'](https://growingwell.b-cdn.net/wp-content/uploads/2024/08/Beach-Mandala-Growing-Well-2.webp)
 
-![An image of a cat](https://placekitten.com/200/300)
+## Coding Technique Exploration
+
+The artwork my team picked is the “Wheels of Fortune”. I may use the p5.Polar library for p5.js to abstract all the polar-to-Cartesian math to draw perfect concentric dot-rings without manual sine/cosine loops, tweak ring count, spacing, and styling in one place:
 
 ```
-function helloWorld() {
-console.log("Hello, world!");
-}
+setCenter(width/2, height/2);
+polarGrid(rings, steps, rStep, angleOffset, (r, θ) => {
+  point(r, θ);
+});
 ```
 
-> This is a blockquote.
+[A Code Example from Openprocessing](https://openprocessing.org/sketch/1879782)
